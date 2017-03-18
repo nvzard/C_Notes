@@ -1,0 +1,31 @@
+Example Code_1:-
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<math.h>
+#include<string.h>
+
+int main()
+{
+    int meatBalls[5]={5,32,52,33,21};
+
+    for(int i=0;i<5;i++)
+    {
+
+    printf("meatBalls[%d]: \t %p \t %d\n",i,&meatBalls[i],meatBalls[i]);
+
+
+    }
+
+    printf("\nmeatBalls \t\t %p\n",meatBalls);
+
+    printf("\n*meatBalls\t\t %d\n",*meatBalls);
+    printf("\n*(meatBalls+3)\t\t %d\n",*(meatBalls+3));
+
+   return 0;
+
+}
+

@@ -1,0 +1,110 @@
+Write a progtam where the user rolls 3 dice and prints out the total. After getting the total guess if the dice roll will be higher[h]/lower[l]/same[s]. Then roll the dice again and see if the guess was correct or not.
+
+
+
+
+
+Code_1:-   // Was generating same random numbers
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+
+{
+int i,dice1,dice2,dice3,dice4,sum;
+char guess;
+dice1= (rand()%6)+1;
+dice2= (rand()%6)+1;
+dice3= (rand()%6)+1;
+
+printf("The three dice rolls are as follows: \n");
+printf("%d \n%d \n%d \n",dice1,dice2,dice3);
+
+sum=dice1+dice2+dice3;
+
+printf("The sum of the 3 dice rolls is %d \n",sum);
+printf("Guess if the next roll would be [h/l/s]: ");
+scanf(" %c",&guess);
+dice4= (rand()%6)+1;
+printf("%d \n",dice4);
+
+if(dice4>dice3 && guess=='h')
+  {
+    printf("Your Guess was correct");
+  }
+else if(dice4<dice3 && guess=='l')
+{
+    printf("Your Guess was correct");
+}
+else if(dice4==dice3 && guess=='s')
+{
+    printf("Your Guess was correct");
+}
+ else{
+    printf("Your Guess was wrong");
+ }
+
+return 0;
+
+}
+
+
+
+Corrected Code_2:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+
+{
+
+int i,dice1,dice2,dice3,dice4,sum;
+char guess;
+
+srand(time(NULL));             //Use srand() function before rand to generate different random numbers everytime you run the program
+
+for(i=1;i<=3;i++)
+{
+ dice1= (rand()%6)+1;
+ dice2= (rand()%6)+1;
+ dice3= (rand()%6)+1;
+}
+printf("The three dice rolls are as follows: \n");
+printf("%d \n%d \n%d \n",dice1,dice2,dice3);
+
+sum=dice1+dice2+dice3;
+
+printf("The sum of the 3 dice rolls is %d \n",sum);
+printf("Guess if the next roll would be [h/l/s]: ");
+scanf(" %c",&guess);
+dice4= (rand()%6)+1;
+printf("%d \n",dice4);
+
+if(dice4>dice3 && guess=='h')
+  {
+    printf("Your Guess was correct");
+  }
+else if(dice4<dice3 && guess=='l')
+{
+    printf("Your Guess was correct");
+}
+else if(dice4==dice3 && guess=='s')
+{
+    printf("Your Guess was correct");
+}
+ else{
+    printf("Your Guess was wrong");
+ }
+
+return 0;
+
+}

@@ -1,0 +1,28 @@
+Syntax :-  pow(base,exponent);
+
+
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main()
+
+{
+int base,power;
+printf("Enter a number :");
+scanf(" %d",&base);
+printf("Enter the power :");
+scanf(" %d",&power);
+printf("%d raised to the power %d is %.2f",base,power,pow(base,power));            //Always use %f for pow function 
+
+return 0;
+
+}
+
+Output:-
+
+Enter a number :4
+Enter the power :5
+4 raised to the power 5 is 1024.00

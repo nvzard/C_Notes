@@ -1,0 +1,36 @@
+Example Code_2:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+
+int main()
+
+{
+int year1;
+int year2;
+
+printf("Enter a year :");
+scanf(" %d",&year1);
+
+printf("Enter another year :");
+scanf(" %d",&year2);
+
+int age=year1-year2;
+
+printf("Result without absolute function : %d",age);
+printf("\nResult with absolute function: %d:",abs(age));
+
+return 0;
+}
+
+
+Output:-
+
+Enter a year :1997
+Enter another year :2017
+Result withot absolute function :-20
+Result with absolute function :20

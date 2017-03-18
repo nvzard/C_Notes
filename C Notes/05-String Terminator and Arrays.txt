@@ -1,0 +1,48 @@
+char name[5];    //Here 5 will allot 5 bytes to the variable name where 4 bytes are for characters and 1 is reserved for string terminator "\0"
+
+Exmaple Code_1 :-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+
+ char name[19]="Nitanshu Vashistha";
+ printf("My name is %s \n",name);
+
+ name[0]='D';                              //here 0 is for 'N' and the counting starts from 0..so 'N' is 0, 'i' is 1 , 't' is 2 and so on... 
+ name[9]='H';
+ printf("My modified name is %s",name);
+
+
+    return (0);
+}
+
+
+Output:-
+My name is Nitanshu Vashistha
+My Modified name is Ditanshu Hashistha
+
+
+
+USE strcpy() function to replace the value of vairables
+
+Example Code_2:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+
+ char name[]="Nitanshu";
+ printf("My name is %s \n",name);
+ strcpy(name,"Masti");                                         //strcpy(var, "string") is used to replace the stored value in a variable
+ printf("My nick name is %s",name)'
+
+
+ return (0);
+}
+

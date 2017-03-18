@@ -1,0 +1,42 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+   
+   printf("%s is the best person ever\n","Karan");                                  //Use %s for strings
+   printf("%s is the best %s ever\n","Bucky","Programmer");
+
+   return (0);
+}
+
+Output:-
+Karan is the best person ever
+Bucky is the best Programmer ever
+
+
+Example Code_2:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+   
+   printf("I ate %d hot dogs last night\n", 14);               //Use %d for numbers
+   printf("Pie is %f\n",3.1458763434);                         //Use %f for decimal places(default 6 decimal places) 
+   printf("Pie is %.2f\n",3.1458763434);                       //Use %.2f for upto 2 decimal placees
+   printf("Pie is %.4f\n",3.1458763434); 
+   
+   
+    return (0);
+}
+
+Output:-
+I ate 14 hot dogs last night
+Pie is 3.1458764343
+Pie is 3.15                                                       //Rounded off result
+Pie is 3.1459

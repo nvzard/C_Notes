@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+	FILE * fPointer;
+	fPointer = fopen("bacon.txt","w+");           //"w+" : first write then read it : 
+	
+	fputs("I ate 3 pumpkins today",fPointer);
+	
+	fseek(fPointer,8,SEEK_SET);                 //fseek() is used to the pointer to a particular location
+                                               	//SEEK_SET is used to move the pointer forward by 8 times the beginning
+ 	
+	
+	fputs("munchkins today",fPointer);
+
+	fseek(fPointer,-5,SEEK_END);			  //SEEK_END end is used to start from the end and "-ve" sign is used to move the pointer backwards
+	
+	fputs("yesterday",fPointer);
+	
+	
+	fclose(fPointer);
+	
+	return 0;
+
+
+}

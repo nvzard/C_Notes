@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<math.h>
+#include<string.h>
+
+int main()
+{
+
+  int a[5]={2,4,5,6,1};
+  int i;
+
+  printf("\tValue \t\t Address\n");
+   for(i=0;i<5;i++)
+  {
+    printf("\t%d \t\t %p\n",a[i],&a[i]);
+  }
+
+  printf("\n\nAddress of First element of array %p\n",a);                         //Address-->&a[i] or (a+i)
+  printf("Address of Second element of array %p\n",a+1);                          //Value-->A[i] or *(A+i)
+  printf("Address of Third element of array %p\n",a+2);
+  printf("Address of Fourth element of array %p\n",a+3);
+  printf("Address of Fifth element of array %p\n",a+4);
+
+  printf("\nAddress of First element of array %p\n",&a[0]);
+  printf("Address of Second element of array %p\n",&a[1]);
+  printf("Address of Third element of array %p\n",&a[2]);
+  printf("Address of Fourth element of array %p\n",&a[3]);
+  printf("Address of Fifth element of array %p\n",&a[4]);
+
+  printf("\nValue of First element of array %d\n",*a);
+  printf("Value of Second element of array %d\n",*(a+1));
+  printf("Value of Third element of array %d\n",*(a+2));
+  printf("Value of Fourth element of array %d\n",*(a+3));
+  printf("Value of Fifth element of array %d\n",*(a+4));
+
+  printf("\nValue of First element of array %d\n",a[0]);
+  printf("Value of Second element of array %d\n",a[1]);
+  printf("Value of Third element of array %d\n",a[2]);
+  printf("Value of Fourth element of array %d\n",a[3]);
+  printf("Value of Fifth element of array %d\n",a[5]);
+
+  return 0;
+}
+
+
+Output-->
+
+        Value            Address
+        2                0060FEF8
+        4                0060FEFC
+        5                0060FF00
+        6                0060FF04
+        1                0060FF08
+
+
+Address of First element of array 0060FEF8
+Address of Second element of array 0060FEFC
+Address of Third element of array 0060FF00
+Address of Fourth element of array 0060FF04
+Address of Fifth element of array 0060FF08
+
+Address of First element of array 0060FEF8
+Address of Second element of array 0060FEFC
+Address of Third element of array 0060FF00
+Address of Fourth element of array 0060FF04
+Address of Fifth element of array 0060FF08
+
+Value of First element of array 2
+Value of Second element of array 4
+Value of Third element of array 5
+Value of Fourth element of array 6
+Value of Fifth element of array 1
+
+Value of First element of array 2
+Value of Second element of array 4
+Value of Third element of array 5
+Value of Fourth element of array 6
+Value of Fifth element of array 5

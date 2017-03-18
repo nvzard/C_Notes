@@ -1,0 +1,38 @@
+Example Code_2:-
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main()
+{
+char yourName[20], crushName[20];
+int numberOfBabies;
+
+printf("What is your name ? \n");
+scanf("%s",yourName);
+
+printf("Who are you going to marry ? \n");
+scanf("%s",crushName);
+
+printf("How many kids will you have ? \n");
+scanf("%d",&numberOfBabies);                                       //USE of & is important when using an integer variable
+
+printf("%s and %s are in love and will have %d babies",yourName,crushName,numberOfBabies);
+
+
+return 0;
+
+}
+
+Output:-
+
+What is your name
+Nitanshu
+Who are you going to marry ?
+*****
+How many kids will you have ?
+*
+Nitanshu and ***** are in love and will have * babies

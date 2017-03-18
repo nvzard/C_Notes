@@ -1,0 +1,53 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+  
+  int age;
+  char gender;
+  
+  printf("What is your age ? \n");
+  scanf(" %d", &age);                             //use space b/w " and %d to avoid bugs    //don't forget to use '&age' instead of 'age'
+  
+  printf("What is your gender ? (m/f) \n");
+  scanf(" %c", &gender);                          //use space b/w " and %c to avoid bugs    //don't forget to use '&gender' instead of 'gender'
+  
+  if(age>=18)
+        {
+		  printf("You may enter the website ");
+            		  
+			
+                 if(gender=='m')
+                   {
+				    printf("dude");
+				   }
+                 
+				 if(gender=='f')
+				   {
+				    printf("m'lady");
+				   }
+			
+		}
+		 
+		 
+  if(age<=18)
+        {
+		  printf("You are not allowed to see the content ");
+		        
+				if(gender=='m')
+                   {
+				    printf("dude");
+				   }
+
+				 if(gender=='f')
+				   {
+				    printf("m'lady");
+				   }	   
+		}    
+		 
+		 
+  return 0;		 
+} 

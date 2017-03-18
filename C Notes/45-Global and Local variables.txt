@@ -1,0 +1,8 @@
+
+Globlal Variable-->If we define a variable outside the main() function or any other user defined function , all the functions would be able
+                   to use it. 
+				   
+				   
+Local Variable-->  If we define a variable inside the main() function or any other user definde function, only that function 
+				   would be able to use the value of that variable not any other function.
+				   

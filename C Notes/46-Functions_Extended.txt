@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void convertToRupees(float dollars);          //PROTOTYING-->Declaring the main function before the main() function
+
+int main()
+{
+    float n;
+    printf("Input amount of $ you want to convert: ");
+    scanf(" %f",&n);
+    convertToRupees(n);
+
+    convertToRupees(50);
+
+	return 0;
+}
+
+void convertToRupees(float dollars)
+{
+    float rupees= dollars*66.50;
+    printf("%.2f Dollars --> %.2f Rupees\n",dollars,rupees);
+
+    return;
+}
+
+

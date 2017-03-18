@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main()
+{
+
+ float avgProfit;
+ int priceOfProduct=20;
+ int sales=89 ;
+ int days=7;
+
+ avgProfit = ((float)priceOfProduct*(float)sales)/(float)days;         //Use "(float)" before original data type 
+ printf("The avg. profit is %.2f ",avgProfit);
+
+
+return 0;
+
+}

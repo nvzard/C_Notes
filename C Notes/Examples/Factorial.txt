@@ -1,0 +1,42 @@
+Example Code_1:-
+
+#include<stdio.h>
+
+int main()
+
+{
+    int i,n,fact=1;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    for(n;n>=1;--n)
+    {
+        fact=fact*n;
+    }
+    printf("The Factorial is %d",fact);
+
+    return 0;
+
+}
+
+Example Code_2:-
+
+#include<stdio.h>
+
+int main()
+
+{
+    int i=1,n,fact=1;
+    printf("Enter a number :");
+    scanf("%d",&n);
+
+   while(i<n)
+   {
+       ++i;
+       fact=fact*i;
+   }
+    printf("The Factorial is %d",fact);
+
+    return 0;
+
+}
+

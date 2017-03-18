@@ -1,0 +1,22 @@
+Example Code_1:-
+
+#include<stdlib.h>
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+{
+ char catName[90];
+ puts("What is the name of your cat? ");
+ gets(catName);
+
+ printf("My cats name is %s \n", catName);
+
+ strcat(catName," is cool");
+ puts(catName):
+ 
+ 
+ return 0;
+
+}

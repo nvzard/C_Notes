@@ -1,0 +1,24 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+
+{
+int i,diceroll;
+for(i=0; i<20; i++)
+   {
+    diceroll= (rand()%6)+1;
+    printf("%d \n",diceroll);
+   }
+
+return 0;
+
+}
+
+
+

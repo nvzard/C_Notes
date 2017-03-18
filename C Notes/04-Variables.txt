@@ -1,0 +1,15 @@
+Example Code_2:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int age;
+	age=19;
+	printf("I am %s years old",age);
+ 
+}
+
+Output:-
+I am 19 years old

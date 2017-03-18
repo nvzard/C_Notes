@@ -1,0 +1,92 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+
+   printf("This is the First line");          //Use " " for text
+
+   return 0;
+}
+
+Output:-
+This is the First line
+
+
+Example Code_2 :-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+
+   printf("This is the First line");          
+   printf("This is the Second line");
+   
+   return 0;
+}
+
+Output:-
+This is the First lineThis is the Second line
+
+Example Code_3:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+
+   printf("This is the First line\n");           //use \n to print and go to a new line
+   printf("This is the Second line");
+   
+   return 0;
+}
+
+Output:-
+This is the First line
+This is the Second line
+
+Example Code_4:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+
+   printf("This is the First line\t");           //use \t put some space b/w the 2 printf statements
+   printf("This is the Second line");
+   
+   return 0;
+}
+
+Output:-
+This is the First line 	This is the Second line
+
+Example Code_5:-
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+	
+   printf("This is the First line\a");           //use of \a make a sound on the computer
+   printf("This is the Second line");
+   
+   return 0; 
+}
+
+Output:-(With a beep sound)
+This is the First lineThis is the Second line
+
+

@@ -1,0 +1,19 @@
+Example Code_1:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+  int * points;
+  
+  points = (int *) malloc(5* sizeof(int));        //malloc-->memory allocation
+  
+  free(points);
+
+
+
+
+}

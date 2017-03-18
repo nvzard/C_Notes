@@ -1,0 +1,45 @@
+
+
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#define MYNAME "Nitanshu"            //use #define to declare constants. Here MYNAME is the constant with value "Nitanshu"
+
+int main()
+
+{
+  printf("My name is %s /n", MYNAME)'
+
+
+  return(0);
+}
+
+Output:-
+My name is Nitanshu
+
+
+
+                            --------------------++++++++++++++++++++++++NOTE++++++++++++++++++++++----------------------------------
+
+#include"myHeader.h"       //use "myHeader.h" for current directory 
+                           //Here myHeader.h is a new file where you can define constants using #define function
+#define MYNAME "Nitanshu"						  
+						    --------------------++++++++++++++++++++++++NOTE++++++++++++++++++++++----------------------------------
+
+Example Code_2 :-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include"myHeader.h>
+
+int main()
+{
+printf("My name is %s",MYNAME);
+return(0);
+}			
+
+Output:-
+My name is Nitanshu				
+						  
+						  

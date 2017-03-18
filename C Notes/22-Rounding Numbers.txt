@@ -1,0 +1,31 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+
+int main()
+
+{
+float number1=123.3223;
+float number2=43.2345;
+
+printf("Number_1 is %.2f \n",floor(number1));
+printf("Number_2 is %.2f \n",floor(number2));
+
+printf("Number_1 is %.2f \n",ceil(number1));
+printf("Number_2 is %.2f \n",ceil(number2));
+
+return 0;
+
+}
+
+
+Output:-
+
+Number_1 is 123.00
+Number_2 is 43.00
+Number_1 is 124.00
+Number_2 is 44.00

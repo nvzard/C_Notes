@@ -1,0 +1,29 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+
+int main()
+{
+  int tuna;
+  printf("Input an alphabet/number :");
+  scanf(" %c",&tuna);
+
+  if(isalpha(tuna))
+  {
+      printf("%c is an alphabet",tuna);
+
+  }
+  else
+  {
+      if(isdigit(tuna))
+        {printf("%c is a number",tuna);}
+      else
+        {printf("%c is OMG WTF is that !?");}
+  }
+
+
+
+    return 0;
+}

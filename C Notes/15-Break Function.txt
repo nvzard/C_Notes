@@ -1,0 +1,42 @@
+Example Code_1:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+  int a;
+  int howMany;
+  int maxAmount=15;
+
+  printf("How many times do you want this loop to loop ? (max 15 times) :");
+  scanf(" %d", &howMany);
+
+  for(a=1; a<=maxAmount; a++)
+
+    {
+     printf("%d \n",a);
+
+     if(a==howMany)
+       {
+         break;
+       }
+
+    }
+
+  return 0;
+
+ }
+
+
+Output:-
+
+Depennds On user input...if=5
+
+1
+2
+3
+4
+5

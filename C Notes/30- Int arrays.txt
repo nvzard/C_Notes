@@ -1,0 +1,33 @@
+Example Code_1:-
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+
+{
+
+int i;
+int meatballs[5];
+int totalballs=0;
+int average;
+for(i=0; i<5; i++)
+     {
+         printf("How Many meatballs did you have on day %d ? \n",i+1);
+         scanf(" %d",&meatballs[i]);
+     }
+
+for(i=0;i<5;i++)
+{
+ totalballs+=meatballs[i];
+}
+
+average=totalballs/5;
+
+printf("You ate %d meatballs in total, that's an average of %d meatballs per day.",totalballs,average);
+
+return 0;
+}

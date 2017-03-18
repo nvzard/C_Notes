@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+	FILE * fPointer;
+	fPointer = fopen("bacon.txt","a");           //"w" to write : "r"to read : "a" to append
+	
+	fprintf(fPointer,"\nThis text will be appended to the end of the file");
+
+	
+	fclose(fPointer);
+	
+	return 0;
+
+
+}

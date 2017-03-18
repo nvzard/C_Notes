@@ -1,0 +1,39 @@
+Example Code_1 :-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+ int num=1;
+
+ do{
+
+    if(num==4||num==7)
+       {
+
+        num++;
+        continue;
+       }
+
+      printf("%d is available \n",num);
+      num++;
+
+   }while(num<=10);
+
+
+ return 0;
+}
+
+Output:-
+
+1 is available
+2 is available
+3 is available
+5 is available
+6 is available
+8 is available
+9 is available
+10 is available

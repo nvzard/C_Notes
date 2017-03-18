@@ -1,0 +1,41 @@
+Example Code_1:-
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+
+{
+  float test=0;
+  float marksEntered=0;
+  float totalMarks=0;
+  float average=0;
+
+  printf("Enter marks 0 to end the program \n \n");
+
+  do{
+      printf("Test:%.0f   Average:%.2f \n",test,average);
+      printf("\nEnter Marks:");
+
+      scanf("%f",&marksEntered);
+      totalMarks+=marksEntered;
+      test++;
+      average=totalMarks/test;
+
+      }
+      while(marksEntered!=0);
+
+  return 0;
+
+}
+
+
+
+Output:-
+
+Enter marks 0 to end the program
+
+Test:0    Average:0.00
+Enter Marks:
+

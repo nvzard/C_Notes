@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void printsomething();      //this is called prototyping - we need to declare a function so that the main() function can search for it
+
+int main()
+{
+	
+	printsomething();
+	printsomething();
+
+	return 0;               // since main() is an integer function we need to return the value'0'
+}
+
+
+void printsomething()								// printsomething() is a user defined function 
+{
+	printf("This is a function\n");
+	return;                                 // since printsomething() is a void(empty) function we need not return any value
+}

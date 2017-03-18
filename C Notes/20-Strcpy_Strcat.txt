@@ -1,0 +1,28 @@
+Example Code_1:-
+
+#include<stdlib.h>
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+{
+    char king[100] ="Hello ";
+    printf("%s \n",king);
+    strcat(king,"Bitches !! ");
+    printf("%s \n",king);
+    strcat(king,"Ready for some D's ? ");
+    printf("%s \n",king);
+    strcpy(king,"Yo Niggas !! That was all bullshit!!");
+    printf("%s",king);
+
+    return 0;
+
+}
+
+Output:-
+
+Hello
+Hello Bitches !!
+Hello Bitches !! Ready for some D's ?
+Yo Niggas !! That was all bullshit!!

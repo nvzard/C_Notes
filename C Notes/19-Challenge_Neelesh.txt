@@ -1,0 +1,32 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+{
+
+    char password[20];
+    int i, upper=0, lower=0, digit=0, dollar=0;
+
+    printf("Enter a password (max 20): ");
+    scanf("%s", password);
+    int n=strlen(password);
+    for(i=0; i<n; i++)
+    {
+        if(isupper(password[i]))
+            upper++;
+        if(islower(password[i]))
+            lower++;
+        if(isdigit(password[i]))
+            digit++;
+        if(password[i]=='$')
+            dollar++;
+    }
+    if(upper>=1 && lower>=1 && digit>=1 && dollar>=1) 
+	printf("Amazing password dude!\n");
+    else
+        printf("Your password sucks!\n");
+    return 0;
+}
+
