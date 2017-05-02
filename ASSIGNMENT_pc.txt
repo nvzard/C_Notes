@@ -1,0 +1,172 @@
+Q1.
+Soln.
+
+#include <stdio.h>
+#define MAX_FILE_NAME 100
+ 
+int main()
+{
+    FILE *fp;
+    int lines = 0,spaces=0,vowels=0;  // Line counter (result)
+    char filename[MAX_FILE_NAME];
+    char c;  
+    printf("Enter file name: ");
+    scanf("%s", filename);
+ 
+    // Open the file
+    fp = fopen(filename, "r");
+   
+     // Extract characters from file and store in character c
+    for (c = getc(fp); c != EOF; c = getc(fp))
+    {
+        if (c == '\n') // Increment count if this character is newline
+            lines++;
+            
+        if (c == ' ')
+            spaces++;
+        
+        if (c =='a' || c =='e' || c =='i' || c =='o' || c =='u')
+            vowels++;
+    }
+        
+ 
+    
+    fclose(fp);
+    printf("The file %s has %d lines\n ", filename, lines);
+    printf("The file %s has %d spaces\n ", filename, spaces);
+    printf("The file %s has %d vowels\n ", filename, vowels);
+ 
+    return 0;
+}
+
+Q2.
+Soln-->
+
+#include <stdio.h>
+#include <string.h>
+
+struct student
+{
+     int id;
+     char name[30];
+     float percentage;
+};
+
+int main()
+{
+     int i;
+     struct student record1 = {1, "Raju", 90.5};
+     struct student *ptr;
+
+     ptr = &record1;
+
+         printf("Records of STUDENT1: \n");
+         printf("  Id is: %d \n", ptr->id);
+         printf("  Name is: %s \n", ptr->name);
+         printf("  Percentage is: %f \n\n", ptr->percentage);
+
+     return 0;
+}
+
+
+
+
+Q3.
+Soln.
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    int i;
+    char s1[100],s2[100];
+    puts("Input string 1:");
+    gets(s1);
+    puts("Input string 2:");
+    gets(s2);
+    strcat(s1,s2);
+    puts(s1);
+    printf("ASCII Values of characters at odd position :-\n");
+
+    for(i=1; s1[i] != '\0' ; i+=2)
+    {
+        printf("%d ",s1[i]);
+    }
+
+
+
+    return 0;
+}
+
+Q4.
+Soln.
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i, a=48;
+    int arr[10];
+    printf("Input 10 values(0 to 9) in the array:\n");
+
+    for(i=0;i<10;i++)
+        scanf("%d",&arr[i]);
+
+    for(i=0; i<10; i++)
+        printf("ASCII value of %d is %d:\n",arr[i],a+arr[i]);
+
+    return 0;
+}
+
+
+Q5.
+Soln
+
+  int fibo(int);
+   
+  int main()
+  {
+      int num;
+      int result;
+   
+      printf("Enter the nth number in fibonacci series: ");
+      scanf("%d", &num);
+      if (num < 0)
+      {
+          printf("Fibonacci of negative number is not possible.\n");
+      }
+      else
+      {
+          result = fibo(num);
+          printf("The %d number in fibonacci series is %d\n", num, result);
+      }
+      return 0;
+  }
+  int fibo(int num)
+  {
+      if (num == 0)
+      {
+          return 0;
+      }
+      else if (num == 1)
+      {
+          return 1;
+      }
+      else
+      {
+          return(fibo(num - 1) + fibo(num - 2));      
+		
+	  }	  
+		  
+  }
+  
+  
+ 
+  
+
+
+
+
+
