@@ -1,1 +1,1 @@
-# C_Notes
+My notes while I was learning C.
